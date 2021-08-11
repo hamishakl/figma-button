@@ -20,8 +20,10 @@ body {
 }
 
 button {
-  font-family: 'Recursive', sans-serif;
+  font-family: "Recursive", sans-serif;
   font-size: inherit;
   cursor: pointer;
+  background: linear-gradient(322.24deg, #60D9FF -4.38%, #1D74FF 48.84%);
+  border-radius: 22px;
 }
 /*# sourceMappingURL=style.css.map */
