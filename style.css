@@ -19,11 +19,52 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
+.button {
+  background: linear-gradient(322.24deg, #60d9ff -4.38%, #1d74ff 48.84%);
+  -webkit-box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.245848), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+          box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.245848), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+  color: white;
+  width: 423px;
+  height: 148px;
   font-family: "Recursive", sans-serif;
   font-size: inherit;
   cursor: pointer;
-  background: linear-gradient(322.24deg, #60D9FF -4.38%, #1D74FF 48.84%);
   border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  outline: none;
+  border: none;
+}
+
+.button:before {
+  background: linear-gradient(126.58deg, #60d9ff -3.24%, #1d74ff 57.16%);
+  -webkit-box-shadow: 0px 5px 50px rgba(71, 184, 255, 0.75), 0px 10px 10px -4px rgba(58, 125, 233, 0.360113), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+          box-shadow: 0px 5px 50px rgba(71, 184, 255, 0.75), 0px 10px 10px -4px rgba(58, 125, 233, 0.360113), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+  width: 423px;
+  height: 148px;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius: inherit;
+  content: "";
+  opacity: 0;
+  display: block;
+  position: absolute;
+  z-index: -100;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button p {
+  font-size: 52px;
 }
 /*# sourceMappingURL=style.css.map */
